@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота № 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Лабораторна робота № 2</h1>
+
+    <!-- * TASK 1 -->
+    <div class="task">
+        <h3>Задача 1</h3>
+        <p class="task__descr">
+            Вводиться послідовність з п'яти чисел. Напишіть сценарій, в якому визначається число максимальних елементів.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task1-form">
+                <input type="number" id="task1-first-inp" class="task__form-inp" placeholder="Число 1">
+                <small id="task1-first-message" class="task__form-message task1__form-message"></small>
+
+                <input type="number" id="task1-second-inp" class="task__form-inp" placeholder="Число 2">
+                <small id="task1-second-message" class="task__form-message task1__form-message"></small>
+
+                <input type="number" id="task1-thirth-inp" class="task__form-inp" placeholder="Число 3">
+                <small id="task1-thirth-message" class="task__form-message task1__form-message"></small>
+
+                <input type="number" id="task1-fouth-inp" class="task__form-inp" placeholder="Число 4">
+                <small id="task1-fouth-message" class="task__form-message task1__form-message"></small>
+
+                <input type="number" id="task1-fifth-inp" class="task__form-inp" placeholder="Число 5">
+                <small id="task1-fifth-message" class="task__form-message task1__form-message"></small>
+
+                <button type="button" id="task1-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Максимальне число: <span id="task1-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 2 -->
+    <div class="task">
+        <h3>Задача 2</h3>
+        <p class="task__descr">
+            Напишіть програму, яка визначає, чи можна побудувати трикутник із заданими довжинами сторін.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task2-form">
+                <input type="number" id="task2-first-inp" class="task__form-inp" placeholder="Сторона 1">
+                <small id="task2-first-message" class="task__form-message task2__form-message"></small>
+
+                <input type="number" id="task2-second-inp" class="task__form-inp" placeholder="Сторона 2">
+                <small id="task2-second-message" class="task__form-message task2__form-message"></small>
+
+                <input type="number" id="task2-thirth-inp" class="task__form-inp" placeholder="Сторона 3">
+                <small id="task2-thirth-message" class="task__form-message task2__form-message"></small>
+
+                <button type="button" id="task2-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output"><span id="task2-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 3 -->
+    <div class="task">
+        <h3>Задача 3</h3>
+        <p class="task__descr">
+            Точка на площині задається своїми координатами. Визначте, якій з чвертей прямокутної системи координат належить задана точка.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task3-form">
+                <input type="number" id="task3-first-inp" class="task__form-inp" placeholder="Коордната по вісі X">
+                <small id="task3-first-message" class="task__form-message task3__form-message"></small>
+
+                <input type="number" id="task3-second-inp" class="task__form-inp" placeholder="Коордната по вісі Y">
+                <small id="task3-second-message" class="task__form-message task3__form-message"></small>
+
+                <button type="button" id="task3-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output"><span id="task3-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 4 -->
+    <div class="task">
+        <h3>Задача 4</h3>
+        <p class="task__descr">
+            Скласти сценарій знаходження факторіалу за допомогою циклів for та while.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task4-form">
+                <input type="number" id="task4-inp" class="task__form-inp" placeholder="Введіть число">
+                <small id="task4-message" class="task__form-message task4__form-message"></small>
+
+                <button type="button" id="task4-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Результат: <span id="task4-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 5 -->
+    <div class="task">
+        <h3>Задача 5</h3>
+        <p class="task__descr">
+            Напишіть програму, яка "перевертає" задане натуральне число.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task5-form">
+                <input type="number" id="task5-inp" class="task__form-inp" placeholder="Введіть число">
+                <small id="task5-message" class="task__form-message task5__form-message"></small>
+
+                <button type="button" id="task5-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Результат: <span id="task5-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 6 -->
+    <div class="task">
+        <h3>Задача 6</h3>
+        <p class="task__descr">
+            Напишіть сценарій, в якому визначається кількість "щасливих"
+            шестизначних автобусних квитків, тобто таких, в номерах яких
+            сума перших трьох цифр дорівнює сумі трьох останніх.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task6-form">
+                <input type="number" id="task6-first-inp" class="task__form-inp" placeholder="Введіть число">
+                <small id="task6-first-message" class="task__form-message task6__form-message"></small>
+
+                <input type="number" id="task6-second-inp" class="task__form-inp" placeholder="Введіть число">
+                <small id="task6-second-message" class="task__form-message task6__form-message"></small>
+
+                <input type="number" id="task6-third-inp" class="task__form-inp" placeholder="Введіть число">
+                <small id="task6-third-message" class="task__form-message task6__form-message"></small>
+
+                <button type="button" id="task6-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output"><span id="task6-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 7 -->
+    <div class="task">
+        <h3>Задача 7</h3>
+        <p class="task__descr">
+            Напишіть програму, що визначає всі дільники заданого натурального числа.            
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task7-form">
+                <input type="number" id="task7-inp" class="task__form-inp" placeholder="Введіть число">
+                <small id="task7-message" class="task__form-message task7__form-message"></small>
+
+                <button type="button" id="task7-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Результат: <span id="task7-output"></span></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

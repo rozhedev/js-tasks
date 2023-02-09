@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота № 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Лабораторна робота № 3</h1>
+
+    <!-- * TASK 1 -->
+    <div class="task">
+        <h3>Задача 1</h3>
+        <p class="task__descr">
+            Задано одновимірний масив дійсних чисел. Напишіть сценарій, який визначає число додатних елементів масиву.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task1-form">
+                <input type="number" id="task1-first-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task1-first-message" class="task__form-message task1__form-message"></small>
+
+                <input type="number" id="task1-second-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task1-second-message" class="task__form-message task1__form-message"></small>
+
+                <input type="number" id="task1-third-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task1-third-message" class="task__form-message task1__form-message"></small>
+
+                <input type="number" id="task1-fouth-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task1-fouth-message" class="task__form-message task1__form-message"></small>
+
+                <input type="number" id="task1-fifth-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task1-fifth-message" class="task__form-message task1__form-message"></small>
+
+                <button type="button" id="task1-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Число додатніх елементів: <span id="task1-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 2 -->
+    <div class="task">
+        <h3>Задача 2</h3>
+        <p class="task__descr">
+            Задано одновимірний масив дійсних чисел. Напишіть сценарій, що дозволяє знайти максимальний елемент у масиві.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task2-form">
+                <input type="number" id="task2-first-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task2-first-message" class="task__form-message task2__form-message"></small>
+
+                <input type="number" id="task2-second-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task2-second-message" class="task__form-message task2__form-message"></small>
+
+                <input type="number" id="task2-third-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task2-third-message" class="task__form-message task2__form-message"></small>
+
+                <input type="number" id="task2-fourth-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task2-fourth-message" class="task__form-message task2__form-message"></small>
+
+                <input type="number" id="task2-fifth-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task2-fifth-message" class="task__form-message task2__form-message"></small>
+
+                <button type="button" id="task2-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Максимальний елемент:<span id="task2-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 3 -->
+    <div class="task">
+        <h3>Задача 3</h3>
+        <p class="task__descr">
+            Задано одновимірний масив дійсних чисел. Напишіть сценарій, який визначає кількість від'ємних елементів масиву
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task3-form">
+                <input type="number" id="task3-first-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task3-first-message" class="task__form-message task3__form-message"></small>
+
+                <input type="number" id="task3-second-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task3-second-message" class="task__form-message task3__form-message"></small>
+
+                <input type="number" id="task3-third-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task3-third-message" class="task__form-message task3__form-message"></small>
+
+                <input type="number" id="task3-fourth-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task3-fourth-message" class="task__form-message task3__form-message"></small>
+
+                <input type="number" id="task3-fifth-inp" class="task__form-inp" placeholder="Введіть число для масиву">
+                <small id="task3-fifth-message" class="task__form-message task3__form-message"></small>
+
+                <button type="button" id="task3-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Число від'ємних елементів: <span id="task3-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 4 -->
+    <div class="task">
+        <h3>Задача 4</h3>
+        <p class="task__descr">
+            Слова в заданому тексті розділяються пробілами. Напишіть програму, яка визначає кількість слів у тексті
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task4-form">
+                <textarea id="task4-textarea" class="task__form-inp" placeholder="Введіть текст" rows="7"></textarea>
+                <small id="task4-message" class="task__form-message task4__form-message"></small>
+
+                <button type="button" id="task4-btn" class="task__form-btn">Перевірити</button>
+            </form>
+            <div class="task__output">Кількість слів: <span id="task4-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 5 -->
+    <div class="task">
+        <h3>Задача 5</h3>
+        <p class="task__descr">
+            Напишіть програму, в якій всі слова А заміняються словом В, де А і В - задані слова, можливо, різноманітної довжини.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task5-form">
+                <textarea id="task5-textarea" class="task__form-inp" placeholder="Введіть текст" rows="7"></textarea>
+                <small id="task5-first-message" class="task__form-message task5__form-message"></small>
+
+                <input type="text" id="task5-first-inp" class="task__form-inp" placeholder="Слово ЯКЕ хочете замінити">
+                <small id="task5-second-message" class="task__form-message task5__form-message"></small>
+
+                <input type="text" id="task5-second-inp" class="task__form-inp" placeholder="Слово ЯКИМ хочете замінити">
+                <small id="task5-third-message" class="task__form-message task5__form-message"></small>
+
+                <button type="button" id="task5-btn" class="task__form-btn">Перевірити</button>
+            </form>
+            <div class="task__output">Результат: <span id="task5-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 6 -->
+    <div class="task">
+        <h3>Задача 6</h3>
+        <p class="task__descr">
+            Напишіть програму, яка "стискає" заданий текст, тобто замінює всі пробіли, що йдуть підряд, на один.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task6-form">
+                <textarea id="task6-textarea" class="task__form-inp" placeholder="Введіть текст" rows="7"></textarea>
+                <small id="task6-message" class="task__form-message task6__form-message"></small>
+
+                <button type="button" id="task6-btn" class="task__form-btn">Стиснути</button>
+            </form>
+            <div class="task__output">Результат: <span id="task6-output"></span></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

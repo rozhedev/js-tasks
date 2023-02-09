@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit 13</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 13. Ассоциативные массивы (объекты)</h1>
+        <h2><a href="https://itgid.info/js" target="_blank">JavaScript v.2.0 - курс Лущенко Александра</a></h2>
+
+        <section>
+            <p><b>Task 1.</b></p>
+            <p>Выведите массив a1 на страницу.</p>
+            <pre>
+                a1 = {
+                 3 : 'hello',
+                 'one' : 'hi'
+                };
+        </pre>
+            <div class="out-1"></div>
+        </section>
+
+        <section>
+            <p><b>Task 2.</b></p>
+            <p>Выведите на страницу элементы из масиива a2 у которых символов больше 4.</p>
+            <pre> a2 = {
+                3 : 'hello',
+                'one' : 'hi',
+                'testt' : 'vodoley',
+                'ivan' : 'ivanov'
+               };</pre>
+            <div class="out-2"></div>
+        </section>
+
+        <section>
+            <p><b>Task 3.</b></p>
+            <p>Выведите на страницу элементы из масиива a3 у которых ключ содержит больше 4 символов.</p>
+            <pre>
+                a3 = {
+                    3 : 'hello',
+                    'one' : 'hi',
+                    'testt' : 'vodoley',
+                    'ivan' : 'ivanov'
+                   };
+            </pre>
+            <div class="out-3"></div>
+        </section>
+
+        <section>
+            <p><b>Task 4.</b></p>
+            <p>Выведите на страницу элементы из масиива a4 у которых значение - число.</p>
+            <pre>
+                a4 = {
+                    3 : 'hello',
+                    'one' : 4,
+                    'testt' : 'vodoley',
+                    'ivan' : 6
+                   };                   
+            </pre>
+            <div class="out-4"></div>
+        </section>
+
+        <section>
+            <p><b>Task 5.</b></p>
+            <p>Дан ассоциативный массив a5. Найдите сумму элементов находящихся в нем.</p>
+            <pre>
+                a5 = {
+                    a : 7,
+                    z : 4,
+                    45 : 12,
+                    f : 6
+                   };
+            </pre>
+            <div class="out-5"></div>
+        </section>
+
+        <section>
+            <p><b>Task 6.</b></p>
+            <p>Создайте ассоциативный массив a6, который содержит ключи name, age, sex, height и значения
+                любого персонажа. Выведите массив на страницу.</p>
+            <div class="out-6"></div>
+        </section>
+
+        <section class="big-section">
+            <p><b>Task 7.</b></p>
+            <p>Создайте ассоциативный массив a7, два input (u7-key__input, u7-value__input) и кнопку. При
+                нажатии кнопки добавляйте в массив новое значение с соответствующим ключем. Выводите массив
+                на страницу.</p>
+            <input type="text" class="u7-key__input">
+            <input type="text" class="u7-value__input">
+            <input type="text" class="u8-key__input">
+            <input type="text" class="u9-delete-value__input">
+            <input type="text" class="u10-has-key__input">
+
+            <button class="b-7">Push</button>
+            <button class="b-8">Remove</button>
+            <button class="b-9">Delete by value</button>
+            <button class="b-10">Check</button>
+
+            <div class="out-7 div-out">out7<br></div>
+            <div class="out-8 div-out">out8<br></div>
+            <div class="out-9 div-out">out9<br></div>
+            <div class="out-10 div-out">out10<br></div>
+        </section>
+
+        <section>
+            <p><b>Task 8.</b></p>
+            <p>Добавьте к предыдущей задачи input.u8-key__input и кнопку. При нажатии кнопки - удаляйте
+                значение с соответствующим ключем. Выводите массив на страницу.</p>
+        </section>
+
+        <section>
+            <p><b>Task 9.</b></p>
+            <p>Добавьте к предыдущей задачи input.u9-delete-value__input и кнопку. При нажатии кнопки -
+                удаляйте записи с соответствующим значением. Выводите массив на страницу.</p>
+        </section>
+
+        <section>
+            <p><b>Task 10.</b></p>
+            <p>Добавьте к предыдущей задачи input.u10-has-key__input и кнопку. При нажатии кнопки -
+                возвращайте true если такой ключ есть в массиве, и false если нет.</p>
+        </section>
+
+        <section>
+            <p><b>Task 11.</b></p>
+            <p>Создайте массив, который описывает метро киевского метрополитена, выведите его на страницу.
+            </p>
+            <div class="out-11"></div>
+        </section>
+
+        <section class="big-section">
+            <p><b>Task 12.</b></p>
+            <p>Добавьте к предыдущей задаче select.u12-branch и кнопку. Пользователь может выбрать цвет ветки
+                и нажать кнопку, после чего на страницу будут выведены только станции данной ветки.</p>
+            <select class="u12-branch">
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+            </select>
+            <select class="u14-find-station">
+                <option value="Академгородок">Академгородок</option>
+                <option value="Житомирская">Житомирская</option>
+                <option value="Святошин">Святошин</option>
+                <option value="Нивки">Нивки</option>
+                <option value="Берестейская">Берестейская</option>
+                <option value="Шулявская">Шулявская</option>
+                <option value="Политехнический институт">Политехнический институт</option>
+                <option value="Вокзальная">Вокзальная</option>
+                <option value="Университет">Университет</option>
+                <option value="Театральная">Театральная</option>
+                <option value="Хрещатик">Хрещатик</option>
+                <option value="Арсенальная">Арсенальная</option>
+                <option value="Днепр">Днепр</option>
+                <option value="Гидропарк">Гидропарк</option>
+                <option value="Левобережная">Левобережная</option>
+                <option value="Дарница">Дарница</option>
+                <option value="Черниговская">Черниговская</option>
+                <option value="Лесовая">Лесовая</option>
+                <option value="Сирец">Сирец</option>
+                <option value="Дорогожичи">Дорогожичи</option>
+                <option value="Лук`яновская">Лук`яновская</option>
+                <option value="Золотые ворота">Золотые ворота</option>
+                <option value="Дворец спорта">Дворец спорта</option>
+                <option value="Кловская">Кловская</option>
+                <option value="Печерская">Печерская</option>
+                <option value="Дружбы народов">Дружбы народов</option>
+                <option value="Видубичи">Видубичи</option>
+                <option value="Славутич">Славутич</option>
+                <option value="Осокорки">Осокорки</option>
+                <option value="Позняки">Позняки</option>
+                <option value="Харковская">Харковская</option>
+                <option value="Вырлица">Вырлица</option>
+                <option value="Бориспольская">Бориспольская</option>
+                <option value="Красный хутор">Красный хутор</option>
+                <option value="Героев Днепра">Героев Днепра</option>
+                <option value="Минская">Минская</option>
+                <option value="Оболонь">Оболонь</option>
+                <option value="Почайная">Почайная</option>
+                <option value="Тараса Шевченка">Тараса Шевченка</option>
+                <option value="Контрактовая площадь">Контрактовая площадь</option>
+                <option value="Почтовая площадь">Почтовая площадь</option>
+                <option value="Майдан Независимости">Майдан Независимости</option>
+                <option value="Площа Льва Толстого">Площа Льва Толстого</option>
+                <option value="Олимпийская">Олимпийская</option>
+                <option value="Дворец 'Украина'">Дворец "Украина"</option>
+                <option value="Лыбидьская">Лыбидьская</option>
+                <option value="Демиевская">Демиевская</option>
+                <option value="Голосиевская">Голосиевская</option>
+                <option value="Васильковская">Васильковская</option>
+                <option value="Выставочный центр">Выставочный центр</option>
+                <option value="Иподром">Иподром</option>
+                <option value="Теремки">Теремки</option>
+            </select>
+            <select class="station1">
+                <option value="Академгородок">Академгородок</option>
+                <option value="Житомирская">Житомирская</option>
+                <option value="Святошин">Святошин</option>
+                <option value="Нивки">Нивки</option>
+                <option value="Берестейская">Берестейская</option>
+                <option value="Шулявская">Шулявская</option>
+                <option value="Политехнический институт">Политехнический институт</option>
+                <option value="Вокзальная">Вокзальная</option>
+                <option value="Университет">Университет</option>
+                <option value="Театральная">Театральная</option>
+                <option value="Хрещатик">Хрещатик</option>
+                <option value="Арсенальная">Арсенальная</option>
+                <option value="Днепр">Днепр</option>
+                <option value="Гидропарк">Гидропарк</option>
+                <option value="Левобережная">Левобережная</option>
+                <option value="Дарница">Дарница</option>
+                <option value="Черниговская">Черниговская</option>
+                <option value="Лесовая">Лесовая</option>
+                <option value="Сирец">Сирец</option>
+                <option value="Дорогожичи">Дорогожичи</option>
+                <option value="Лук`яновская">Лук`яновская</option>
+                <option value="Золотые ворота">Золотые ворота</option>
+                <option value="Дворец спорта">Дворец спорта</option>
+                <option value="Кловская">Кловская</option>
+                <option value="Печерская">Печерская</option>
+                <option value="Дружбы народов">Дружбы народов</option>
+                <option value="Видубичи">Видубичи</option>
+                <option value="Славутич">Славутич</option>
+                <option value="Осокорки">Осокорки</option>
+                <option value="Позняки">Позняки</option>
+                <option value="Харковская">Харковская</option>
+                <option value="Вырлица">Вырлица</option>
+                <option value="Бориспольская">Бориспольская</option>
+                <option value="Красный хутор">Красный хутор</option>
+                <option value="Героев Днепра">Героев Днепра</option>
+                <option value="Минская">Минская</option>
+                <option value="Оболонь">Оболонь</option>
+                <option value="Почайная">Почайная</option>
+                <option value="Тараса Шевченка">Тараса Шевченка</option>
+                <option value="Контрактовая площадь">Контрактовая площадь</option>
+                <option value="Почтовая площадь">Почтовая площадь</option>
+                <option value="Майдан Независимости">Майдан Независимости</option>
+                <option value="Площа Льва Толстого">Площа Льва Толстого</option>
+                <option value="Олимпийская">Олимпийская</option>
+                <option value="Дворец 'Украина'">Дворец "Украина"</option>
+                <option value="Лыбидьская">Лыбидьская</option>
+                <option value="Демиевская">Демиевская</option>
+                <option value="Голосиевская">Голосиевская</option>
+                <option value="Васильковская">Васильковская</option>
+                <option value="Выставочный центр">Выставочный центр</option>
+                <option value="Иподром">Иподром</option>
+                <option value="Теремки">Теремки</option>
+            </select>
+            <select class="station2">
+                <option value="Академгородок">Академгородок</option>
+                <option value="Житомирская">Житомирская</option>
+                <option value="Святошин">Святошин</option>
+                <option value="Нивки">Нивки</option>
+                <option value="Берестейская">Берестейская</option>
+                <option value="Шулявская">Шулявская</option>
+                <option value="Политехнический институт">Политехнический институт</option>
+                <option value="Вокзальная">Вокзальная</option>
+                <option value="Университет">Университет</option>
+                <option value="Театральная">Театральная</option>
+                <option value="Хрещатик">Хрещатик</option>
+                <option value="Арсенальная">Арсенальная</option>
+                <option value="Днепр">Днепр</option>
+                <option value="Гидропарк">Гидропарк</option>
+                <option value="Левобережная">Левобережная</option>
+                <option value="Дарница">Дарница</option>
+                <option value="Черниговская">Черниговская</option>
+                <option value="Лесовая">Лесовая</option>
+                <option value="Сирец">Сирец</option>
+                <option value="Дорогожичи">Дорогожичи</option>
+                <option value="Лук`яновская">Лук`яновская</option>
+                <option value="Золотые ворота">Золотые ворота</option>
+                <option value="Дворец спорта">Дворец спорта</option>
+                <option value="Кловская">Кловская</option>
+                <option value="Печерская">Печерская</option>
+                <option value="Дружбы народов">Дружбы народов</option>
+                <option value="Видубичи">Видубичи</option>
+                <option value="Славутич">Славутич</option>
+                <option value="Осокорки">Осокорки</option>
+                <option value="Позняки">Позняки</option>
+                <option value="Харковская">Харковская</option>
+                <option value="Вырлица">Вырлица</option>
+                <option value="Бориспольская">Бориспольская</option>
+                <option value="Красный хутор">Красный хутор</option>
+                <option value="Героев Днепра">Героев Днепра</option>
+                <option value="Минская">Минская</option>
+                <option value="Оболонь">Оболонь</option>
+                <option value="Почайная">Почайная</option>
+                <option value="Тараса Шевченка">Тараса Шевченка</option>
+                <option value="Контрактовая площадь">Контрактовая площадь</option>
+                <option value="Почтовая площадь">Почтовая площадь</option>
+                <option value="Майдан Независимости">Майдан Независимости</option>
+                <option value="Площа Льва Толстого">Площа Льва Толстого</option>
+                <option value="Олимпийская">Олимпийская</option>
+                <option value="Дворец 'Украина'">Дворец "Украина"</option>
+                <option value="Лыбидьская">Лыбидьская</option>
+                <option value="Демиевская">Демиевская</option>
+                <option value="Голосиевская">Голосиевская</option>
+                <option value="Васильковская">Васильковская</option>
+                <option value="Выставочный центр">Выставочный центр</option>
+                <option value="Иподром">Иподром</option>
+                <option value="Теремки">Теремки</option>
+            </select>
+            <select class="u16-select">
+            </select>
+            <label for="">Красная ветка<input name="radio" type="radio" class="u16-radio" value="red"></label>
+            <label for="">Зеленая ветка<input name="radio" type="radio" class="u16-radio" value="green"></label>
+            <label for="">Синяя ветка<input name="radio" type="radio" class="u16-radio" value="blue"></label>
+            <button class="u12-show-station">Узнать</button>
+            <button class="u13-reverse">Наоборот</button>
+            <button class="u14-show-branch">Узнать ветку</button>
+            <button class="u15-show-distance">расстояние</button>
+            <button class="u16-check">Добавить</button>
+            <div class="out-12 div-out"></div>
+            <div class="out-13 div-out"></div>
+            <div class="out-14 div-out"></div>
+            <div class="out-15 div-out"></div>
+        </section>
+
+        <section>
+            <p><b>Task 13.</b></p>
+            <p>Добавьте к предыдущей задаче кнопку button.u13-reverse которая при нажатии выводит станции ветки
+                в обратном порядке. Внимание! Все подобные задачи не меняют массив, а меняют только вывод!!!</p>
+        </section>
+
+        <section>
+            <p><b>Task 14.</b></p>
+            <p>Добавьте к предыдущей задаче select.u14-find-station и кнопку. В select - пользователь может
+                выбрать станцию, а вы перебирая массив - вывести ветку на которой эта станция находится.</p>
+        </section>
+
+        <section>
+            <p><b>Task 15.</b></p>
+            <p>Добавьте к предыдущему заданию 2 select где пользователь может выбрать 2 станции, и если они на
+                одной ветке - то по нажатию на кнопку будет показано сколько станций между ними (сами станции
+                не включаем. Если это соседние станции - то 0).</p>
+        </section>
+
+        <section>
+            <p><b>Task 16.</b></p>
+            <p>Добавьте 3 radiobutton.u16-radio которые содержат value = red, green, blue - в соотвтествии с
+                цветом веток метро. Добавьте пустой select.u16-select. При выборе radio - программа должна в
+                select добавлять option с названиями станций метро. Т.е. выбрали radio(value="green") то внутрь
+                select должны быть записаны option со станциями зеленой ветки. Выбрали red - select должен
+                быть очищен и добавлены option со станциями красной ветки.</p>
+        </section>
+
+        <section>
+            <p><b>Task 17.</b></p>
+            <p>Создайте массив, который описывает метро киевского метрополитена и обозначаются конечные и
+                 станции перехода, выведите его на страницу. Конечные - обозначать 0, перехода - 1.</p>
+            <pre>
+                a17 = {
+                    "red" : [ ['Академгородок', 0] ,...],
+                    "green" : 
+                }
+            </pre>
+            <div class="out-17"></div>
+        </section>
+
+        <section>
+            <p><b>Task 18.</b></p>
+            <p>Выведите на страницу только станции с переходами из массива a17.</p>
+            <div class="out-18"></div>
+        </section>
+
+        <section>
+            <p><b>Task 19.</b></p>
+            <p>Создайте ассоциативный массив где ключами являются страны азии, а вложенными массивами - 
+                ассоциативный массив содержащий название столицы, количество населения, площадь. Выведите его
+                на страницу.</p>
+            <div class="out-19"></div>
+        </section>
+
+        <section>
+            <p><b>Task 20.</b></p>
+            <p>Дополните массив из задачи 19 так, чтобы пользователь мог сам выбирать страну в select, а
+                 необходимая информация подтягивалась на страницу.</p>
+            <select class="u20-choose-country">
+                <option value="Russia">Russia</option>
+                <option value="China">China</option>
+                <option value="Korea">Korea</option>
+                <option value="Israel">Israel</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Japan">Japan</option>
+                <option value="India">India</option>
+                <option value="Vietnam">Vietnam</option>
+            </select>
+            <div class="out-20"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

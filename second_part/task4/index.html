@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота № 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Лабораторна робота № 4</h1>
+
+    <!-- * TASK 1 -->
+    <div class="task">
+        <h3>Задача 1</h3>
+        <p class="task__descr">
+            Напишіть сценарій, який за заданою датою визначає номер тижня в році.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task1-form">
+                <input type="date" id="task1-date" class="task__form-inp" placeholder="Оберіть дату">
+                <small id="task1-message" class="task__form-message"></small>
+
+                <button type="button" id="task1-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Результат: <span id="task1-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 2 -->
+    <div class="task">
+        <h3>Задача 2</h3>
+        <p class="task__descr">
+            Напишіть сценарій, який за датою народження людини визначає, під яким знаком зодіаку народилася людина.
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task2-form">
+                <input type="date" id="task2-date" class="task__form-inp" placeholder="Оберіть дату">
+                <small id="task2-message" class="task__form-message"></small>
+
+                <button type="button" id="task2-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output"><span id="task2-output"></span></div>
+        </div>
+    </div>
+
+    <!-- * TASK 3 -->
+    <div class="task">
+        <h3>Задача 3</h3>
+        <p class="task__descr">
+            У давньояпонському календарі був прийнятий 60-річний цикл, що
+            складається з п'яти 12-річних підциклів. Підцикли позначалися назвами
+            кольорів: зелений, червоний, жовтий, білий, чорний. Усередині кожного
+            підциклу роки носили назви тварин: пацюка, корови, тигра, зайця, дракона,
+            змії, коня, вівці, мавпи, курки, собаки та свині. Наприклад, 1984 рік (рік
+            зеленого щура) був початком чергового циклу. Напишіть сценарій, який за
+            заданою датою визначає назву року за давньояпонським календарем. <br>
+            <a href="https://multi-lady.ru/cvet-znakov-kitajskogo-goroskopa/">Використане джерело</a>
+        </p>
+        <div class="task__inner">
+            <form action="#" class="task__form" id="task3-form">
+                <input type="date" id="task3-date" class="task__form-inp" placeholder="Оберіть дату">
+                <small id="task3-message" class="task__form-message"></small>
+
+                <button type="button" id="task3-btn" class="task__form-btn">Розрахувати</button>
+            </form>
+            <div class="task__output">Результат: <span id="task3-output"></span></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

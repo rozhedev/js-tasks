@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit 04</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>UNIT 4 . РАБОТАЕМ С ФОРМАМИ: INPUT, RANGE, TEXTAREA, CHECKBOX...</h1>
+        <h2><a href="https://js2.itgid.info" target="_blank">JavaScript v.2.0 - курс Лущенко Александра</a></h2>
+
+        <section>
+            <p><b>Task 1.</b></p>
+            <p>Создайте button - при нажатии на него выводите alert с номером задачи.</p>
+            <button class="button-primary b-1">Task-1</button>
+        </section>
+
+        <section>
+            <p><b>Task 2.</b></p>
+            <p>Создайте input type=button - при нажатии на него выводите alert с номером задачи.</p>
+            <input type="button" class="button-primary b-2" value="Task-2"
+                style="background-color: forestgreen; color: #fff;">
+        </section>
+
+        <section>
+            <p><b>Task 3.</b></p>
+            <p>Создайте p - при нажатии на него выводите alert с номером задачи.</p>
+            <p class="button-primary b-3" style="width: 120px; cursor: pointer;">Кликни на меня</p>
+        </section>
+
+        <section>
+            <p><b>Task 4.</b></p>
+            <p>Создайте input(checkbox) и button - при нажатии на него выводите true если checkbox выбран и false если
+                нет.
+            </p>
+            <div class="form-control">Input i-4 <input type="checkbox" class="i-4"></div>
+            <button class="button-primary b-4">Task-4</button>
+            <div class="out-4"></div>
+        </section>
+
+        <section>
+            <p><b>Task 5.</b></p>
+            <p> Создайте input(checkbox) и button. Добавьте value для checkbox. При нажатии на него выводите value если
+                checkbox выбран и false если нет.</p>
+            <div class="form-control">Input i-5 <input type="checkbox" class="i-5" value="Это 5 задача"></div>
+            <button class="button-primary b-5">Task-5</button>
+            <div class="out-5"></div>
+        </section>
+
+        <section>
+            <p><b>Task 6.</b></p>
+            <p>Создайте input(hidden) и button - при нажатии на него выводите alert с value прописанным в input.</p>
+            <div class="form-control">Input i-6 <input type="hidden" class="i-6"
+                    value="Вдруг откуда не возьмись появилось это value"></div>
+            <button class="button-primary b-6">Task-6</button>
+        </section>
+
+        <section>
+            <p><b>Task 7.</b></p>
+            <p>Создайте input(password) и button - при нажатии на него выводите alert с value прописанным в input.
+                Выводите в консоль предупреждение, если длина пароля меньше 6 символов.</p>
+            <div class="form-control">Input i-7 <input type="password" class="i-7"></div>
+
+            <button class="button-primary b-7">Task-7</button>
+        </section>
+
+        <section>
+            <p><b>Task 8.</b></p>
+            <p>Создайте div и кнопку. При нажатии кнопки создавайте внутри div элемент input и кнопку (innerHTML).
+                Добавьте на созданную кнопку событие - при клике выводить alert c содержимым созданного input.</p>
+            <div class="out-8"></div>
+            <button class="button-primary b-8">Task-8</button>
+        </section>
+
+        <section>
+            <p><b>Task 9.</b></p>
+            <p> Создайте один input(radio) . и button - при нажатии на button выводите alert с value прописанным в
+                активном (если он активен, если нет - то alert - false) radiobutton.
+            </p>
+            <div class="form-control">Input i-9 <input type="radio" class="i-9" value="Active radiobutton"></div>
+
+            <button class="button-primary b-9">Task-9</button>
+            <div class="out-9"></div>
+        </section>
+
+        <section>
+            <p><b>Task 10.</b></p>
+            <p>Создайте input(color) и button - при нажатии на него окрашивайте div выбранным цветом.
+            </p>
+            <div class="form-control">Input i-101 <input type="color" class="i-10" value=""></div>
+            <button class="button-primary b-10">Task-10</button>
+            <div class="out-10">Нажмите на кнопку и он станет цветным</div>
+        </section>
+
+        <section>
+            <p><b>Task 11.</b></p>
+            <p>Создайте input(color) - два элемента и button - при нажатии на кнопку присвойте цвет из первого input в
+                value второго.</p>
+            <label for="i-111">Значение первого цвета <input type="color" id="i-111"></label><br>
+            <button class="button-primary b-11">Task-11</button><br>
+            <label for="i-112">По нажатию на кнопку переходит у второй <input type="color" id="i-112"></label>
+        </section>
+
+        <section>
+            <p><b>Task 12.</b></p>
+            <p>Создайте input(date) и button - при нажатии на кнопку выводите на страницу выбранную дату.</p>
+            <label for="i-12">Значение первого цвета <input type="date" id="i-12"></label>
+            <button class="button-primary b-12">Task-12</button>
+            <div class="out-12"></div>
+        </section>
+
+        <section>
+            <p><b>Task 13.</b></p>
+            <p>Создайте input(range) и button - при нажатии на кнопку выводите на страницу значение из input. Добавьте
+                событие oninput на range и тоже выводите значение на страницу.</p>
+            <label for="i-13">Ползунок <input type="range" class="i-13"></label>
+            <button class="button-primary b-13">Task-13</button>
+            <div class="out-131">50</div>
+            <div class="out-132">50</div>
+        </section>
+
+        <section>
+            <p><b>Task 14.</b></p>
+            <p>Создайте input(range) и button - при нажатии на кнопку выводите на страницу значение из input. Добавьте
+                событие oninput на range и тоже выводите значение на страницу.</p>
+            <label for="textarea-1"><textarea id="textarea-1" cols="10" rows="5"></textarea></label>
+            <button class="button-primary b-14">Task-14</button>
+            <div class="out-14"></div>
+        </section>
+
+        <section>
+            <p><b>Task 15.</b></p>
+            <p>Создайте text-area, input и button - при нажатии на кнопку выводите текс из input в textarea и на
+                страницу./</p>
+            <label for="textarea-1"><textarea id="textarea-2" cols="10" rows="5"></textarea></label>
+            <input type="text" id="i-15">
+            <button class="button-primary b-15">Task-15</button>
+            <div class="out-15"></div>
+        </section>
+
+        <section>
+            <p><b>Task 16.</b></p>
+            <p>Создайте select и button - при нажатии на кнопку выводите на страницу value выбраннов в select option.
+            </p>
+            <select id="first-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <button class="button-primary b-16">Task-16</button>
+            <div class="out-16"></div>
+        </section>
+
+        <section>
+            <p><b>Task 17.</b></p>
+            <p>Эту задачу пока не делаем!!!!!</p>
+            <input type="text" id="i-17">
+            <button class="button-primary b-17">Task-17</button>
+            <div class="out-17"></div>
+        </section>
+
+        <section>
+            <p><b>Task 18.</b></p>
+            <p>Создайте select добавьте на него событие onchange. По данному событию выводите value выбранного option на
+                страницу.</p>
+            <select id="second-select">
+                <option value="a">1</option>
+                <option value="b">2</option>
+                <option value="c">3</option>
+                <option value="d">4</option>
+            </select>
+            <div class="out-18"></div>
+        </section>
+
+        <section>
+            <p><b>Task 19.</b></p>
+            <p>Создайте форму. В ней input(text) и input(password) - и кнопку. По нажатию кнопки выводите значение text
+                и password в консоль!.</p>
+            <form action="">
+                <label for="login">Логин<input type="text" id="login"></label>
+                <label for="password">Пароль<input type="password" id="password"></label>
+                <button class="button-primary" id="b-19">Загляните в консоль</button>
+            </form>
+        </section>
+
+        <section>
+            <p><b>Task 20.</b></p>
+            <p>Создайте форму. В ней input(text) и input(password) - и кнопку. По нажатию кнопки выводите значение text
+                и password в консоль!.</p>
+            <form action="" name="signup">
+                <input type="text" name="login2">
+                <input type="password" name="password2">
+                <button class="button-primary" id="b-20">Загляните в консоль второй раз</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="unit_04.js"></script>
+</body>
+
+</html>

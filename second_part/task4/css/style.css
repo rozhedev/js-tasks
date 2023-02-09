@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #e7ab35;
+    --accent-shadow-color: #FFEDCB;
+    --gray-color: #888;
+    --text-color: #3B0F00;
+    --light-color: #fff;
+}
+
+html {
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    color: var(--text-color);
+}
+
+/* * Обнуление стилей в input */
+
+input,
+button,
+textarea {
+    font-family: inherit;
+    transition: .6s all;
+}
+
+textarea {
+    resize: none;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+/* * Для Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* * Для Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button {
+    border: none;
+    background-color: none;
+}
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* * input[type=data] */
+
+/* input[type=date] {
+    
+} */
+
+/* * Template */
+
+.task {
+    width: 50%;
+    margin: 20px auto 40px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 3px var(--gray-color);
+}
+
+.task__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.task__descr {
+    margin-top: 10px;
+}
+
+.task__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 40px;
+}
+
+.task__form-inp {
+    padding: 7px 15px;
+    font-size: 18px;
+    border: 3px solid var(--gray-color);
+    border-radius: 10px;
+}
+
+.task__form-inp:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 4px 2px var(--accent-shadow-color);
+}
+
+.task__form-btn {
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.task__form-btn:hover {
+    background-color: var(--accent-shadow-color);
+}
+
+.task__form-message {
+    margin: 10px 0px;
+}
+
+.task__output {
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--accent-shadow-color);
+}
